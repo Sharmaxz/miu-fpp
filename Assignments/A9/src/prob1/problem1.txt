@@ -1,0 +1,27 @@
+Problem 1: Unchecked Exception Practice. Use this ShoppingCart.java file to
+handle Unchecked Exceptions to satisfy the given Tasks part.
+
+import java.util.Scanner;
+
+public class ShoppingCart {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Enter quantity of items to add (1-50): ");
+        int quantity = sc.nextInt();
+        System.out.println("Successfully added " + quantity + " items to your cart!");
+    }
+}
+
+Tasks
+
+1. Handle wrong input type
+o If the user enters a string, decimal, or symbol instead of an integer,
+catch InputMismatchException and display a user-friendly message.
+
+2. Handle invalid range
+o If the quantity entered is less than 1 or greater than 50, throw and
+handle IllegalArgumentException with a proper message.
+
+3. Graceful retry
+o After catching an exception, prompt the user again until valid input is
+entered. (Use While loop)

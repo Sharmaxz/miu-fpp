@@ -1,0 +1,38 @@
+Problem 2: Custom Exception
+
+In your Assignment you can get the CustomerAccount Java class with the implemented methods.
+Your task is to satisfy the given Part A-C requirement and need to create a TestClass with the main() method.
+
+Part A: Create Custom Exception
+• Define one class → AccountException extends RuntimeException.
+• Use its constructor to accept a message string.
+• Example messages:
+    o "Insufficient funds! Withdrawal amount exceeds balance."
+    o "Low balance warning! Balance cannot go below $100.
+
+Part B: Modify Methods
+1. Withdraw method (withdraw(double amount))
+    o Apply a check for withdrawal greater than the balance → raise your custom exception with the message
+    “Insufficient funds! Withdrawal amount exceeds balance.”
+    o  Apply a check if the withdrawal reduces the balance below $100 → raise your custom exception with the message
+    “Low balance warning! Balance cannot go below $100.”
+
+2. Deposit method (deposit(double amount))
+    o Ensure the deposit amount is positive.
+    o If a negative deposit is attempted, raise an appropriate API exception (IllegalArgumentException) with a clear message.
+
+3. Get Balance method (getBalance())
+o No exception handling is needed. Simply return the balance.
+
+Part C: Driver/Test Class
+
+• In main(), create an account and test:
+
+1. Deposit with negative input → IllegalArgumentException.
+
+2. Withdraw more than balance → AccountException with “Insufficient
+funds…” message.
+
+3. Withdraw valid amount that drops below $100 → AccountException with “Low balance warning…” message.
+
+4. Successful deposit and withdraw.

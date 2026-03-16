@@ -1,0 +1,22 @@
+Problem 3: You have fully implemented Stack.java and TestStack.java given in the
+assignments as a startup code. Your job is to complete the given tasks for the proper
+Exceptions usage.
+
+
+Tasks
+1. Underflow (use API exception)
+    o For pop() and peek() when the stack is empty, throw java.util.EmptyStackException.
+
+2. Overflow (use API exception)
+    o For push(...) when the stack is full, throw IllegalStateException with a clear message, e.g.,
+    "Stack Overflow: cannot push, stack is full."
+
+3. Null value (use API exception)
+    o For push(null), throw NullPointerException with a clear message, e.g., "Null values are not allowed."
+
+4. Update Test Code
+    o In TestStack, add try/catch blocks to demonstrate:
+        § Overflow on push
+        § Null push
+        § Underflow on pop and on peek
+    o Print friendly messages when exceptions are caught.
