@@ -1,0 +1,26 @@
+Problem 4: Queue API - Customer Service Ticketing System
+
+Class Design:
+Task 1: Create a Ticket class that represents a customer service ticket with attributes
+such as id and description with the constructor, necessary getters and setters.
+
+Task 2: Create a TicketingSystem class that manages the ticket queue.
+• This class need to include the attribute Queue<Ticket> and a nextId for
+the ticket. You can auto generate the ticket id or random int id. It’s up to
+you.
+
+• A default constructor to initialize the fields.
+
+Method Requirements:
+
+• addTicket(String description): This method should add a new ticket to the
+queue with a unique ID and the provided description.
+• processTicket(): This method should process (remove and return) the ticket at
+the front of the queue.
+• viewNextTicket(): This method should allow viewing the ticket at the front of
+the queue without removing it.
+• Implement any additional methods you find necessary to manage the ticket queue
+effectively.
+
+Task 3: A demonstration of the system in action through a main method by creating a
+Test class.

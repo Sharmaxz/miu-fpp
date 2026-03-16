@@ -1,0 +1,15 @@
+Problem-3
+Do the following in main:
+a) Create an ArrayList<Order>.
+b) add() at least five Order objects.
+c) Delete an object by instance (pass an Order you previously added).
+d) Print the size of the list.
+e) Retrieve an Order by position (get(index)) and print it.
+f) Update the details of an Order by position (set(index, new Order(...))).
+g) Override equals() in Order.java (consistent equals implementation required).
+h) Sort by totalAmount (ascending) using a Comparator that’s consistent
+with equals. Print the sorted list.
+i) Write a method to filter orders with totalAmount > 50.0 and return a new
+list; then sort that result by customerName (A→Z) and print it.
+Method signature to implement in OrderTest.java:
+public static List<Order> listMoreThan50(List<Order> list) { /* ... */ }

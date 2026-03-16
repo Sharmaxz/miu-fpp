@@ -1,0 +1,63 @@
+Problem 1. [User Defined array-based Circular Queue] For this problem, you will
+implement a queue of ints, using an array in the background.
+
+When adding an element to the queue, you add the element to the position pointed to by
+the variable rear. When removing an element from the queue, you remove the element
+in the position pointed to by the variable front.
+Implement all of the methods declared below so that your class behaves as a queue using
+circular array to utilize the memory efficiently. The methods to be implemented are:
+isEmpty, size, enqueue, dequeue, peek, resize and toString. A start-up
+class ArrayQueueImpl, listing all of these methods, has been provided for you. You will
+need to implement the methods in that class. Write a Main class with an implemented main
+method to test your own code.
+
+
+Your code must meet the following requirements:
+
+1. Make sure before inserting you have room and if needed do the resizing.
+2. dequeue(delete/remove) or peek should not cause null pointer
+exception.
+3. You may not use Java library collection classes to create your queue.
+4. There must not be any compilation errors or runtime errors in the solution that
+you submit.
+
+
+public class ArrayQueueImpl {
+ private final int DEFAULT_CAPACITY = 10;
+ private int size;
+ private Integer[] arr;
+ private int front;
+ private int rear;
+
+    // Add Constructors, Default and Parameterized to initialize instance fields
+    public Integer peek() {
+    return null;
+    //implement
+    }
+
+    public void enqueue(int obj){
+    //implement
+    }
+
+    public Integer dequeue() {
+    return null;
+    }
+
+    public boolean isEmpty(){
+    //implement
+    return false;
+    }
+
+    public int size(){
+    //implement
+    return 0;
+    }
+
+     private void resize(){
+    //implement
+    }
+
+     public String toString(){
+     /* Return data in this format, each element separated by comma with in [ ] eg:
+    [10, 20, 30, 40, 50, 60 ]*/
+    return null;

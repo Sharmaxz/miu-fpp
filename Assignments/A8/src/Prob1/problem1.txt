@@ -1,0 +1,45 @@
+Problem 1. [Data Structures]
+
+For this problem, you will be given a list of students,
+represented as instances of a Student class. Each student has a first name, a last name, a
+gpa, and a class (classes are Freshman, Sophomore, Junior, Senior). In a method called
+processStudents, you will read Student objects from an input list and put each in
+a HashMap. Each value in the HashMap will be a Student object; the corresponding
+key for a Student object will be a Key object whose instance variables are firstName
+and lastName, representing the first and last names of this Student. For each
+Student object read from the list, you will create the Key object and insert the
+Key,Student pair into the HashMap.
+
+Your prob1 package contains a fully implemented Student class, and contains a
+partially implemented Key class. This prob1 package also contains a class Admin
+containing the following unimplemented static method:
+
+HashMap<Key,Student> processStudents(List<Student> students).
+
+
+This method will carry out the steps described above: For each student object in the input
+list students, it will read firstName and lastName, and then use these to populate
+a new Key object key; it will then insert (key, student) as an entry in the
+HashMap. After the students list has been processed in this way, the HashMap is
+returned.
+
+There is one additional class in the prob1 package, called Test, which has already
+been fully implemented. The Test class has a main method that will provide sample
+data to test your processStudents method. The main method will output "pass" to
+the console if the test passes, but will output "fail" if it does not. In order to get full credit,
+the main method must (correctly) output "pass".
+
+Your tasks for this problem are as follows:
+(1) Add any necessary code to the Key class to ensure it may be used reliably as a key
+in a HashMap.
+(2) Implement the processStudents method
+(3) Run the main method in the Test class to verify that your solution works (and
+correct your code if it does not).
+Requirements for this problem.
+(A) You may not modify the Student class or change the instance variables provided in the
+Key class
+(B) You are allowed to modify the Test class, but your code must pass the test that has been
+provided for you in the main method of this class.
+(C) Appropriate changes must be made to the Key class (to follow best practices and to ensure
+that the main method will output "pass" to the console).
+(D)  There must be no compiler or runtime errors in your submitted code.

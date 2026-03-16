@@ -1,0 +1,5 @@
+Problem 2 [User Defined Stack using Linked list]
+
+Take the demo code ArrayStack.java. In that file Stack is implemented using Array. Do
+the same behaviors by implementing stack using Linked List.
+[ Either using singly linked list / Doubly linked list ] - Only user Implementation
